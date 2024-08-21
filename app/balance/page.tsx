@@ -43,7 +43,7 @@ const BalancePage = () => {
 
         <div className={styles.infoBox}>
           <h2 className={styles.sectionTitle}>Credit Card</h2>
-          <p className={styles.creditCard}>**** **** **** 1234</p>
+          <p className={styles.creditCard}>**** **** **** 2240</p>
           <p className={styles.details}>Expiration: 12/24</p>
           <p className={styles.details}>Available Credit: $5,000.00</p>
         </div>
