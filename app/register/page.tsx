@@ -32,7 +32,7 @@ const RegisterPage = () => {
   return (
     <div className={styles.background}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Create Your Account</h1>
+        <h1 className={styles.title}>Create Your <br/> <span className={styles.minititle}>Scotiabank</span></h1>
         <form onSubmit={handleRegister} className={styles.form}>
         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
           <label className={styles.label}>
