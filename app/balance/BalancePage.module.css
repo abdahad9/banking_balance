@@ -22,6 +22,16 @@
     color: #333;
     margin-bottom: 20px;
   }
+
+  .title_logo {
+    margin-bottom: 1.5rem;
+    color: black;
+    font-size: 34px;
+    font-weight: 800;
+  }
+  .minititle{
+    color: red;
+  }
   
   .infoBox {
     background-color: #f9f9f9;

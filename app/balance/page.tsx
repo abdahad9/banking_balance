@@ -30,6 +30,7 @@ const BalancePage = () => {
   return (
     <div className={styles.background}>
       <div className={styles.container}>
+      <h1 className={styles.title_logo}>Welcome to <br/><span className={styles.minititle}>Scotiabank</span></h1>
         <h1 className={styles.title}>Account Overview</h1>
         <div className={styles.infoBox}>
           <h2 className={styles.sectionTitle}>Balance</h2>
