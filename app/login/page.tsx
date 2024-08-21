@@ -69,7 +69,7 @@ const LoginPage = () => {
           <button type="submit" className={styles.signInBtn}>Sign In</button>
         </form>
         <p className={styles.registerPrompt}>
-          Don't have a username and password? <Link href="/register">Set them up now.</Link>
+            Don&apos;t have a username and password? <Link href="/register">Set them up now.</Link>
         </p>
       </div>
     </div>
