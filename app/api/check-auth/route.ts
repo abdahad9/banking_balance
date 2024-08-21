@@ -1,14 +1,21 @@
 import { getServerSession } from 'next-auth/next';
-import { authOptions } from '@/lib/auth'; // You need to configure your auth options here
+import { authOptions } from '@/lib/auth'; // Make sure this is correctly configured
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const session = true;
+  try {
+    const session = await getServerSession(authOptions);
 
-  if (session) {
-    return NextResponse.json({ isLoggedIn: true });
-  } else {
-    return NextResponse.json({ isLoggedIn: false });
+    if (session) {
+      // User is authenticated
+      return NextResponse.json({ isLoggedIn: true });
+    } else {
+      // User is not authenticated
+      return NextResponse.json({ isLoggedIn: false });
+    }
+  } catch (error) {
+    console.error('Error retrieving session:', error);
+    // Return an error response
+    return NextResponse.json({ error: 'An error occurred' }, { status: 500 });
   }
 }
-1
