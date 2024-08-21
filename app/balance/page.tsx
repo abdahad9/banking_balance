@@ -50,14 +50,14 @@ const BalancePage = () => {
 
         <div className={styles.infoBox}>
           <h2 className={styles.sectionTitle}>Investments</h2>
-          <p className={styles.investments}>Total Investment: $1,234,567.89</p>
+          <p className={styles.investments}>Total Investment: $6,927,881.75</p>
           <p className={styles.details}>Stocks: $834,567.89</p>
           <p className={styles.details}>Bonds: $400,000.00</p>
         </div>
 
         <div className={styles.infoBox}>
           <h2 className={styles.sectionTitle}>Net Worth</h2>
-          <p className={styles.netWorth}>$2,150,000.00</p>
+          <p className={styles.netWorth}>$91,696,775.25</p>
         </div>
 
         <button onClick={handleLogout} className={styles.logoutBtn}>
