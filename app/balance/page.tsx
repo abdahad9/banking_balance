@@ -30,12 +30,35 @@ const BalancePage = () => {
   return (
     <div className={styles.background}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Your Balance</h1>
-        {balance !== null ? (
-          <p className={styles.balance}>$85,000,000</p>
-        ) : (
-          <p className={styles.loading}>Loading...</p>
-        )}
+        <h1 className={styles.title}>Account Overview</h1>
+        <div className={styles.infoBox}>
+          <h2 className={styles.sectionTitle}>Balance</h2>
+          {balance !== null ? (
+            <p className={styles.balance}>$84,768,893.56</p>
+          ) : (
+            <p className={styles.loading}>Loading balance...</p>
+          )}
+        </div>
+
+        <div className={styles.infoBox}>
+          <h2 className={styles.sectionTitle}>Credit Card</h2>
+          <p className={styles.creditCard}>**** **** **** 1234</p>
+          <p className={styles.details}>Expiration: 12/24</p>
+          <p className={styles.details}>Available Credit: $5,000.00</p>
+        </div>
+
+        <div className={styles.infoBox}>
+          <h2 className={styles.sectionTitle}>Investments</h2>
+          <p className={styles.investments}>Total Investment: $1,234,567.89</p>
+          <p className={styles.details}>Stocks: $834,567.89</p>
+          <p className={styles.details}>Bonds: $400,000.00</p>
+        </div>
+
+        <div className={styles.infoBox}>
+          <h2 className={styles.sectionTitle}>Net Worth</h2>
+          <p className={styles.netWorth}>$2,150,000.00</p>
+        </div>
+
         <button onClick={handleLogout} className={styles.logoutBtn}>
           Logout
         </button>
